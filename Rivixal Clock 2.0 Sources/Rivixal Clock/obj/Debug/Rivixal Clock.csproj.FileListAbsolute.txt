@@ -1,0 +1,128 @@
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.exe.config
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.exe
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.pdb
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.AssemblyReference.cache
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Form1.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Properties.Resources.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.GenerateResource.cache
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.CoreCompileInputs.cache
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.exe
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.pdb
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.AddAlarm.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Alarm.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.about.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.pdb
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.timeout.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.CopyComplete
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.updater.resources
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\RestSharp.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Buffers.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Memory.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Numerics.Vectors.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Json.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.ValueTuple.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\RestSharp.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Buffers.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Memory.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Numerics.Vectors.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Json.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\System.ValueTuple.xml
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Newtonsoft.Json.dll
+D:\Languange\C#\Rivixal Clock\Rivixal Clock\bin\Debug\Newtonsoft.Json.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.exe.config
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.exe
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Rivixal Clock.pdb
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Newtonsoft.Json.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\RestSharp.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Buffers.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Memory.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Json.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.ValueTuple.dll
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\Newtonsoft.Json.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.pdb
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\NodaTime.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\RestSharp.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Buffers.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Memory.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Text.Json.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\bin\Debug\System.ValueTuple.xml
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.AssemblyReference.cache
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.about.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.AddAlarm.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Alarm.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Form1.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.Properties.Resources.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.timeout.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal_Clock.updater.resources
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.GenerateResource.cache
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.CoreCompileInputs.cache
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal .BE998B63.Up2Date
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.exe
+C:\Users\artem\source\repos\Rivixal Clock\Rivixal Clock\Rivixal Clock\obj\Debug\Rivixal Clock.pdb
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Rivixal Clock.exe.config
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Rivixal Clock.exe
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Rivixal Clock.pdb
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Newtonsoft.Json.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\NodaTime.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\RestSharp.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Buffers.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Memory.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Numerics.Vectors.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Text.Json.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.ValueTuple.dll
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\Newtonsoft.Json.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\NodaTime.pdb
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\NodaTime.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\RestSharp.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Buffers.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Memory.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Numerics.Vectors.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Text.Encodings.Web.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Text.Json.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\bin\Debug\System.ValueTuple.xml
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.AssemblyReference.cache
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.about.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.AddAlarm.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.Alarm.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.Form1.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.Properties.Resources.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.timeout.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.updater.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.GenerateResource.cache
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal Clock.csproj.CoreCompileInputs.cache
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal .BE998B63.Up2Date
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal Clock.exe
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal Clock.pdb
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.screensaver.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.addworldtime.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.artosik.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.game1.resources
+D:\Languange\C#\UPDATED RIVIXAL CLOCK\Rivixal Clock\obj\Debug\Rivixal_Clock.Manythanks.resources
