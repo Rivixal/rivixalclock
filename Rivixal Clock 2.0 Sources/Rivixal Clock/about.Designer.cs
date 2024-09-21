@@ -130,7 +130,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 26);
             this.label5.TabIndex = 12;
-            this.label5.Text = "V2.0.0.0\r\nLicense: MIT";
+            this.label5.Text = "V2.0.2.0\r\nLicense: MIT";
             // 
             // button7
             // 

@@ -44,13 +44,29 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Monday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Tuesday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Wednesday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Thursday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Friday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Saturday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Sunday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button6 = new System.Windows.Forms.Button();
@@ -83,6 +99,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.Timerset = new System.Windows.Forms.Label();
             this.DidgitalTimer = new System.Windows.Forms.Label();
@@ -105,8 +122,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -116,29 +131,13 @@
             this.Timeout = new System.Windows.Forms.Timer(this.components);
             this.WorldClock = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Column = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Monday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Tuesday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Wednesday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Thursday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Friday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Saturday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Sunday = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -157,6 +156,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -166,8 +166,6 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // mainMenu1
@@ -294,793 +292,6 @@
             this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
             this.dataGridView1.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridView1_RowsRemoved);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.flowLayoutPanel2);
-            this.panel1.Controls.Add(this.toolStrip1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(988, 242);
-            this.panel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel2.Controls.Add(this.panel9);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(988, 192);
-            this.flowLayoutPanel2.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label6);
-            this.panel9.Controls.Add(this.label1);
-            this.panel9.Controls.Add(this.label2);
-            this.panel9.Location = new System.Drawing.Point(230, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(344, 173);
-            this.panel9.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(752, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "False";
-            this.label6.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 86);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "-";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "-";
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 217);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(988, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.tabControl4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(994, 468);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Clock";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(566, 385);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 80);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.button6.Location = new System.Drawing.Point(215, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(207, 74);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Remove";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.button5.Location = new System.Drawing.Point(3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(206, 74);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Add";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.date_world_text);
-            this.panel2.Controls.Add(this.world_time_text);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(566, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 231);
-            this.panel2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(-1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Unkown time zone";
-            // 
-            // date_world_text
-            // 
-            this.date_world_text.AutoSize = true;
-            this.date_world_text.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_world_text.Location = new System.Drawing.Point(-1, 108);
-            this.date_world_text.Name = "date_world_text";
-            this.date_world_text.Size = new System.Drawing.Size(114, 37);
-            this.date_world_text.TabIndex = 6;
-            this.date_world_text.Text = "--.--.-- ?";
-            // 
-            // world_time_text
-            // 
-            this.world_time_text.AutoSize = true;
-            this.world_time_text.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.world_time_text.Location = new System.Drawing.Point(-1, 22);
-            this.world_time_text.Name = "world_time_text";
-            this.world_time_text.Size = new System.Drawing.Size(155, 86);
-            this.world_time_text.TabIndex = 5;
-            this.world_time_text.Text = "--:--";
-            // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage10);
-            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl4.Location = new System.Drawing.Point(3, 3);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(563, 462);
-            this.tabControl4.TabIndex = 2;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.listBox3);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(555, 436);
-            this.tabPage10.TabIndex = 1;
-            this.tabPage10.Text = "Added time zones";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // listBox3
-            // 
-            this.listBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 30;
-            this.listBox3.Location = new System.Drawing.Point(3, 3);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(549, 430);
-            this.listBox3.TabIndex = 1;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.panel6);
-            this.tabPage3.Controls.Add(this.panel7);
-            this.tabPage3.Controls.Add(this.tabControl3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1028, 414);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Stopwatch";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.tableLayoutPanel3);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(230, 306);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(795, 105);
-            this.panel6.TabIndex = 9;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.stopwatch_stop, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.stopwatch_start, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button7, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.stopwatch_pause, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(795, 105);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // stopwatch_stop
-            // 
-            this.stopwatch_stop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stopwatch_stop.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopwatch_stop.Location = new System.Drawing.Point(400, 55);
-            this.stopwatch_stop.Name = "stopwatch_stop";
-            this.stopwatch_stop.Size = new System.Drawing.Size(392, 47);
-            this.stopwatch_stop.TabIndex = 5;
-            this.stopwatch_stop.Text = "Stop";
-            this.stopwatch_stop.UseVisualStyleBackColor = true;
-            this.stopwatch_stop.Click += new System.EventHandler(this.stopwatch_stop_Click);
-            // 
-            // stopwatch_start
-            // 
-            this.stopwatch_start.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stopwatch_start.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopwatch_start.Location = new System.Drawing.Point(3, 55);
-            this.stopwatch_start.Name = "stopwatch_start";
-            this.stopwatch_start.Size = new System.Drawing.Size(391, 47);
-            this.stopwatch_start.TabIndex = 4;
-            this.stopwatch_start.Text = "Start";
-            this.stopwatch_start.UseVisualStyleBackColor = true;
-            this.stopwatch_start.Click += new System.EventHandler(this.stopwatch_start_Click);
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(3, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(391, 46);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Lap";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // stopwatch_pause
-            // 
-            this.stopwatch_pause.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stopwatch_pause.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopwatch_pause.Location = new System.Drawing.Point(400, 3);
-            this.stopwatch_pause.Name = "stopwatch_pause";
-            this.stopwatch_pause.Size = new System.Drawing.Size(392, 46);
-            this.stopwatch_pause.TabIndex = 3;
-            this.stopwatch_pause.Text = "Pause";
-            this.stopwatch_pause.UseVisualStyleBackColor = true;
-            this.stopwatch_pause.Click += new System.EventHandler(this.stopwatch_pause_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.lap_score);
-            this.panel7.Controls.Add(this.stopwatch_time);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(230, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(795, 285);
-            this.panel7.TabIndex = 8;
-            // 
-            // lap_score
-            // 
-            this.lap_score.AutoSize = true;
-            this.lap_score.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lap_score.Location = new System.Drawing.Point(19, 126);
-            this.lap_score.Name = "lap_score";
-            this.lap_score.Size = new System.Drawing.Size(57, 25);
-            this.lap_score.TabIndex = 1;
-            this.lap_score.Text = "lap: 0";
-            // 
-            // stopwatch_time
-            // 
-            this.stopwatch_time.AutoSize = true;
-            this.stopwatch_time.Font = new System.Drawing.Font("Segoe UI", 58F);
-            this.stopwatch_time.Location = new System.Drawing.Point(6, 22);
-            this.stopwatch_time.Name = "stopwatch_time";
-            this.stopwatch_time.Size = new System.Drawing.Size(490, 104);
-            this.stopwatch_time.TabIndex = 0;
-            this.stopwatch_time.Text = "0.00:00:00.00";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl3.Location = new System.Drawing.Point(3, 3);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(227, 408);
-            this.tabControl3.TabIndex = 7;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.lapsBox1);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(219, 382);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "laps";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // lapsBox1
-            // 
-            this.lapsBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lapsBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lapsBox1.FormattingEnabled = true;
-            this.lapsBox1.ItemHeight = 21;
-            this.lapsBox1.Location = new System.Drawing.Point(3, 3);
-            this.lapsBox1.Name = "lapsBox1";
-            this.lapsBox1.Size = new System.Drawing.Size(213, 376);
-            this.lapsBox1.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.panel5);
-            this.tabPage4.Controls.Add(this.panel3);
-            this.tabPage4.Controls.Add(this.progressBar1);
-            this.tabPage4.Controls.Add(this.tabControl2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1028, 414);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Timer";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.tableLayoutPanel2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(262, 353);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(763, 58);
-            this.panel5.TabIndex = 6;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 2, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(763, 58);
-            this.tableLayoutPanel2.TabIndex = 8;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 52);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Start";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(257, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(248, 52);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Stop";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(511, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 52);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Pause";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(262, 23);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(763, 231);
-            this.panel3.TabIndex = 2;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(763, 219);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.Timerset);
-            this.panel8.Controls.Add(this.DidgitalTimer);
-            this.panel8.Location = new System.Drawing.Point(252, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(279, 205);
-            this.panel8.TabIndex = 3;
-            // 
-            // Timerset
-            // 
-            this.Timerset.AutoSize = true;
-            this.Timerset.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Timerset.Location = new System.Drawing.Point(11, 77);
-            this.Timerset.Name = "Timerset";
-            this.Timerset.Size = new System.Drawing.Size(0, 25);
-            this.Timerset.TabIndex = 1;
-            // 
-            // DidgitalTimer
-            // 
-            this.DidgitalTimer.AutoSize = true;
-            this.DidgitalTimer.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DidgitalTimer.Location = new System.Drawing.Point(1, 0);
-            this.DidgitalTimer.Name = "DidgitalTimer";
-            this.DidgitalTimer.Size = new System.Drawing.Size(275, 86);
-            this.DidgitalTimer.TabIndex = 0;
-            this.DidgitalTimer.Text = "00:00:00";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.progressBar1.Location = new System.Drawing.Point(262, 3);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(763, 20);
-            this.progressBar1.TabIndex = 7;
-            this.progressBar1.Value = 100;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(259, 408);
-            this.tabControl2.TabIndex = 1;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.button12);
-            this.tabPage6.Controls.Add(this.maskedTextBox1);
-            this.tabPage6.Controls.Add(this.label9);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(251, 382);
-            this.tabPage6.TabIndex = 0;
-            this.tabPage6.Text = "Setup Timer";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(3, 71);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(245, 79);
-            this.button12.TabIndex = 2;
-            this.button12.Text = "Add Quick Timer";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(3, 28);
-            this.maskedTextBox1.Mask = "90:00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '-';
-            this.maskedTextBox1.Size = new System.Drawing.Size(245, 43);
-            this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 25);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Setup Timer";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.QuickTimer);
-            this.tabPage7.Controls.Add(this.button9);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(251, 382);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "Quick Timer";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // QuickTimer
-            // 
-            this.QuickTimer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QuickTimer.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuickTimer.FormattingEnabled = true;
-            this.QuickTimer.ItemHeight = 30;
-            this.QuickTimer.Location = new System.Drawing.Point(3, 3);
-            this.QuickTimer.Name = "QuickTimer";
-            this.QuickTimer.Size = new System.Drawing.Size(245, 299);
-            this.QuickTimer.TabIndex = 1;
-            this.QuickTimer.SelectedIndexChanged += new System.EventHandler(this.QuickTimer_SelectedIndexChanged);
-            // 
-            // button9
-            // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(3, 302);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(245, 98);
-            this.button9.TabIndex = 7;
-            this.button9.Text = "Remove selected quick timer";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.White;
-            this.tabPage5.Controls.Add(this.panel10);
-            this.tabPage5.Controls.Add(this.panel11);
-            this.tabPage5.Controls.Add(this.panel12);
-            this.tabPage5.Controls.Add(this.checkBox2);
-            this.tabPage5.Controls.Add(this.checkBox1);
-            this.tabPage5.Controls.Add(this.panel4);
-            this.tabPage5.Controls.Add(this.label4);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1028, 414);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Settings";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label5);
-            this.panel10.Controls.Add(this.comboBox1);
-            this.panel10.Location = new System.Drawing.Point(28, 91);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(407, 78);
-            this.panel10.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(261, 30);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Language (requires restart)";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "English",
-            "Русский"});
-            this.comboBox1.Location = new System.Drawing.Point(10, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(380, 38);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.comboBox3);
-            this.panel11.Controls.Add(this.label7);
-            this.panel11.Location = new System.Drawing.Point(28, 175);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(407, 79);
-            this.panel11.TabIndex = 15;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Progress",
-            "Circle"});
-            this.comboBox3.Location = new System.Drawing.Point(10, 33);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(380, 38);
-            this.comboBox3.TabIndex = 9;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 30);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Style timer";
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.comboBox4);
-            this.panel12.Controls.Add(this.label8);
-            this.panel12.Location = new System.Drawing.Point(28, 260);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(407, 80);
-            this.panel12.TabIndex = 15;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Analog",
-            "Digital",
-            "Analog and Digital"});
-            this.comboBox4.Location = new System.Drawing.Point(10, 35);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(380, 38);
-            this.comboBox4.TabIndex = 11;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 30);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Style clock";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(8, 6);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(109, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "en_addons_part";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.Visible = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(123, 6);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(107, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "ru_addons_part";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.Visible = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(3, 356);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1022, 55);
-            this.panel4.TabIndex = 3;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(1022, 55);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Save changes";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(213, 65);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Settings";
-            // 
-            // datetime
-            // 
-            this.datetime.Enabled = true;
-            this.datetime.Tick += new System.EventHandler(this.datetime_Tick);
-            // 
-            // alarmtimer
-            // 
-            this.alarmtimer.Enabled = true;
-            this.alarmtimer.Tick += new System.EventHandler(this.alarm_Tick);
-            // 
-            // Swatch
-            // 
-            this.Swatch.Interval = 1;
-            this.Swatch.Tick += new System.EventHandler(this.Swatch_Tick);
-            // 
-            // Timeout
-            // 
-            this.Timeout.Interval = 1000;
-            this.Timeout.Tick += new System.EventHandler(this.Timer_Tick);
-            // 
-            // WorldClock
-            // 
-            this.WorldClock.Interval = 1000;
-            this.WorldClock.Tick += new System.EventHandler(this.WorldClock_Tick);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Column
             // 
             this.Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -1194,6 +405,27 @@
             this.Column12.HeaderText = "Text";
             this.Column12.Name = "Column12";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.flowLayoutPanel2);
+            this.panel1.Controls.Add(this.toolStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(988, 242);
+            this.panel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanel2.Controls.Add(this.panel9);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(988, 192);
+            this.flowLayoutPanel2.TabIndex = 4;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
@@ -1204,6 +436,62 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label6);
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Controls.Add(this.label2);
+            this.panel9.Location = new System.Drawing.Point(230, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(344, 173);
+            this.panel9.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(752, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "False";
+            this.label6.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(-6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 86);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "-";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 37);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "-";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
+            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStrip1.Location = new System.Drawing.Point(0, 217);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(988, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripButton1
             // 
@@ -1233,6 +521,380 @@
             this.toolStripButton3.Text = "Save";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.tabControl4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(994, 468);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Clock";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(566, 385);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 80);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.button6.Location = new System.Drawing.Point(215, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(207, 74);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Remove";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.button5.Location = new System.Drawing.Point(3, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(206, 74);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Add";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.date_world_text);
+            this.panel2.Controls.Add(this.world_time_text);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(566, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(425, 231);
+            this.panel2.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(-1, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(169, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Unkown time zone";
+            // 
+            // date_world_text
+            // 
+            this.date_world_text.AutoSize = true;
+            this.date_world_text.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_world_text.Location = new System.Drawing.Point(-1, 108);
+            this.date_world_text.Name = "date_world_text";
+            this.date_world_text.Size = new System.Drawing.Size(114, 37);
+            this.date_world_text.TabIndex = 6;
+            this.date_world_text.Text = "--.--.-- ?";
+            // 
+            // world_time_text
+            // 
+            this.world_time_text.AutoSize = true;
+            this.world_time_text.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.world_time_text.Location = new System.Drawing.Point(-1, 22);
+            this.world_time_text.Name = "world_time_text";
+            this.world_time_text.Size = new System.Drawing.Size(155, 86);
+            this.world_time_text.TabIndex = 5;
+            this.world_time_text.Text = "--:--";
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage10);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl4.Location = new System.Drawing.Point(3, 3);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(563, 462);
+            this.tabControl4.TabIndex = 2;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.listBox3);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(555, 436);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "time zones";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // listBox3
+            // 
+            this.listBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 30;
+            this.listBox3.Location = new System.Drawing.Point(3, 3);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(549, 430);
+            this.listBox3.TabIndex = 1;
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.panel6);
+            this.tabPage3.Controls.Add(this.panel7);
+            this.tabPage3.Controls.Add(this.tabControl3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(994, 468);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Stopwatch";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.tableLayoutPanel3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(230, 360);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(761, 105);
+            this.panel6.TabIndex = 9;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.stopwatch_stop, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.stopwatch_start, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.button7, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.stopwatch_pause, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(761, 105);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // stopwatch_stop
+            // 
+            this.stopwatch_stop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stopwatch_stop.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopwatch_stop.Location = new System.Drawing.Point(383, 55);
+            this.stopwatch_stop.Name = "stopwatch_stop";
+            this.stopwatch_stop.Size = new System.Drawing.Size(375, 47);
+            this.stopwatch_stop.TabIndex = 5;
+            this.stopwatch_stop.Text = "Stop";
+            this.stopwatch_stop.UseVisualStyleBackColor = true;
+            this.stopwatch_stop.Click += new System.EventHandler(this.stopwatch_stop_Click);
+            // 
+            // stopwatch_start
+            // 
+            this.stopwatch_start.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stopwatch_start.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopwatch_start.Location = new System.Drawing.Point(3, 55);
+            this.stopwatch_start.Name = "stopwatch_start";
+            this.stopwatch_start.Size = new System.Drawing.Size(374, 47);
+            this.stopwatch_start.TabIndex = 4;
+            this.stopwatch_start.Text = "Start";
+            this.stopwatch_start.UseVisualStyleBackColor = true;
+            this.stopwatch_start.Click += new System.EventHandler(this.stopwatch_start_Click);
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(3, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(374, 46);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "Lap";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // stopwatch_pause
+            // 
+            this.stopwatch_pause.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stopwatch_pause.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopwatch_pause.Location = new System.Drawing.Point(383, 3);
+            this.stopwatch_pause.Name = "stopwatch_pause";
+            this.stopwatch_pause.Size = new System.Drawing.Size(375, 46);
+            this.stopwatch_pause.TabIndex = 3;
+            this.stopwatch_pause.Text = "Pause";
+            this.stopwatch_pause.UseVisualStyleBackColor = true;
+            this.stopwatch_pause.Click += new System.EventHandler(this.stopwatch_pause_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.lap_score);
+            this.panel7.Controls.Add(this.stopwatch_time);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(230, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(761, 285);
+            this.panel7.TabIndex = 8;
+            // 
+            // lap_score
+            // 
+            this.lap_score.AutoSize = true;
+            this.lap_score.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lap_score.Location = new System.Drawing.Point(19, 126);
+            this.lap_score.Name = "lap_score";
+            this.lap_score.Size = new System.Drawing.Size(57, 25);
+            this.lap_score.TabIndex = 1;
+            this.lap_score.Text = "lap: 0";
+            // 
+            // stopwatch_time
+            // 
+            this.stopwatch_time.AutoSize = true;
+            this.stopwatch_time.Font = new System.Drawing.Font("Segoe UI", 58F);
+            this.stopwatch_time.Location = new System.Drawing.Point(6, 22);
+            this.stopwatch_time.Name = "stopwatch_time";
+            this.stopwatch_time.Size = new System.Drawing.Size(490, 104);
+            this.stopwatch_time.TabIndex = 0;
+            this.stopwatch_time.Text = "0.00:00:00.00";
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage8);
+            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl3.Location = new System.Drawing.Point(3, 3);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(227, 462);
+            this.tabControl3.TabIndex = 7;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.lapsBox1);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(219, 436);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "laps";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // lapsBox1
+            // 
+            this.lapsBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lapsBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lapsBox1.FormattingEnabled = true;
+            this.lapsBox1.ItemHeight = 21;
+            this.lapsBox1.Location = new System.Drawing.Point(3, 3);
+            this.lapsBox1.Name = "lapsBox1";
+            this.lapsBox1.Size = new System.Drawing.Size(213, 430);
+            this.lapsBox1.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.White;
+            this.tabPage4.Controls.Add(this.panel5);
+            this.tabPage4.Controls.Add(this.panel3);
+            this.tabPage4.Controls.Add(this.progressBar1);
+            this.tabPage4.Controls.Add(this.tabControl2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(994, 468);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Timer";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.tableLayoutPanel2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(262, 407);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(729, 58);
+            this.panel5.TabIndex = 6;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button3, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button1, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(729, 58);
+            this.tableLayoutPanel2.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(237, 52);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Start";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(246, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(237, 52);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Stop";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(489, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(237, 52);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Pause";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.flowLayoutPanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(262, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(729, 231);
+            this.panel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(729, 219);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
@@ -1241,6 +903,317 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.Timerset);
+            this.panel8.Controls.Add(this.DidgitalTimer);
+            this.panel8.Location = new System.Drawing.Point(252, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(279, 205);
+            this.panel8.TabIndex = 3;
+            // 
+            // Timerset
+            // 
+            this.Timerset.AutoSize = true;
+            this.Timerset.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Timerset.Location = new System.Drawing.Point(11, 77);
+            this.Timerset.Name = "Timerset";
+            this.Timerset.Size = new System.Drawing.Size(0, 25);
+            this.Timerset.TabIndex = 1;
+            // 
+            // DidgitalTimer
+            // 
+            this.DidgitalTimer.AutoSize = true;
+            this.DidgitalTimer.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DidgitalTimer.Location = new System.Drawing.Point(1, 0);
+            this.DidgitalTimer.Name = "DidgitalTimer";
+            this.DidgitalTimer.Size = new System.Drawing.Size(275, 86);
+            this.DidgitalTimer.TabIndex = 0;
+            this.DidgitalTimer.Text = "00:00:00";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.progressBar1.Location = new System.Drawing.Point(262, 3);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(729, 20);
+            this.progressBar1.TabIndex = 7;
+            this.progressBar1.Value = 100;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(259, 462);
+            this.tabControl2.TabIndex = 1;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.button12);
+            this.tabPage6.Controls.Add(this.maskedTextBox1);
+            this.tabPage6.Controls.Add(this.label9);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(251, 436);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "Setup Timer";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(3, 71);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(245, 79);
+            this.button12.TabIndex = 2;
+            this.button12.Text = "Add Quick Timer";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(3, 28);
+            this.maskedTextBox1.Mask = "90:00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.PromptChar = '-';
+            this.maskedTextBox1.Size = new System.Drawing.Size(245, 43);
+            this.maskedTextBox1.TabIndex = 0;
+            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 25);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Setup Timer";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.QuickTimer);
+            this.tabPage7.Controls.Add(this.button9);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(251, 436);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "Quick Timer";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // QuickTimer
+            // 
+            this.QuickTimer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuickTimer.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuickTimer.FormattingEnabled = true;
+            this.QuickTimer.ItemHeight = 30;
+            this.QuickTimer.Location = new System.Drawing.Point(3, 3);
+            this.QuickTimer.Name = "QuickTimer";
+            this.QuickTimer.Size = new System.Drawing.Size(245, 332);
+            this.QuickTimer.TabIndex = 1;
+            this.QuickTimer.SelectedIndexChanged += new System.EventHandler(this.QuickTimer_SelectedIndexChanged);
+            // 
+            // button9
+            // 
+            this.button9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(3, 335);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(245, 98);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "Remove selected quick timer";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.panel10);
+            this.tabPage5.Controls.Add(this.panel11);
+            this.tabPage5.Controls.Add(this.panel12);
+            this.tabPage5.Controls.Add(this.panel4);
+            this.tabPage5.Controls.Add(this.label4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(994, 468);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Settings";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label5);
+            this.panel10.Controls.Add(this.comboBox1);
+            this.panel10.Location = new System.Drawing.Point(28, 91);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(407, 78);
+            this.panel10.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(5, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(261, 30);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Language (requires restart)";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "English",
+            "Русский"});
+            this.comboBox1.Location = new System.Drawing.Point(10, 33);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(380, 38);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.comboBox3);
+            this.panel11.Controls.Add(this.label7);
+            this.panel11.Location = new System.Drawing.Point(28, 175);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(407, 79);
+            this.panel11.TabIndex = 15;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Progress",
+            "Circle"});
+            this.comboBox3.Location = new System.Drawing.Point(10, 33);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(380, 38);
+            this.comboBox3.TabIndex = 9;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 30);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Style timer";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.comboBox4);
+            this.panel12.Controls.Add(this.label8);
+            this.panel12.Location = new System.Drawing.Point(28, 260);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(407, 80);
+            this.panel12.TabIndex = 15;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Analog",
+            "Digital",
+            "Analog and Digital"});
+            this.comboBox4.Location = new System.Drawing.Point(10, 35);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(380, 38);
+            this.comboBox4.TabIndex = 11;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(5, 2);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 30);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Style clock";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(3, 410);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(988, 55);
+            this.panel4.TabIndex = 3;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(988, 55);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Save changes";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(17, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(213, 65);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Settings";
+            // 
+            // datetime
+            // 
+            this.datetime.Enabled = true;
+            this.datetime.Tick += new System.EventHandler(this.datetime_Tick);
+            // 
+            // alarmtimer
+            // 
+            this.alarmtimer.Enabled = true;
+            this.alarmtimer.Tick += new System.EventHandler(this.alarm_Tick);
+            // 
+            // Swatch
+            // 
+            this.Swatch.Interval = 1;
+            this.Swatch.Tick += new System.EventHandler(this.Swatch_Tick);
+            // 
+            // Timeout
+            // 
+            this.Timeout.Interval = 1000;
+            this.Timeout.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // WorldClock
+            // 
+            this.WorldClock.Interval = 1000;
+            this.WorldClock.Tick += new System.EventHandler(this.WorldClock_Tick);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -1263,6 +1236,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -1285,6 +1259,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.tabControl2.ResumeLayout(false);
@@ -1300,8 +1275,6 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1369,8 +1342,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton3;

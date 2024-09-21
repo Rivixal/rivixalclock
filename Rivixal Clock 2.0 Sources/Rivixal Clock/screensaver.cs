@@ -50,8 +50,8 @@ namespace Rivixal_Clock
             this.KeyPress += new KeyPressEventHandler(OnActivity);
             this.MouseClick += new MouseEventHandler(OnActivity);
             random = new Random();
-            panelSpeed = 10; // Скорость движения панели
-            direction = 1; // 1 - вниз, -1 - вверх
+            panelSpeed = 10;
+            direction = 1;
             Cursor.Hide();
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
@@ -84,7 +84,6 @@ namespace Rivixal_Clock
 
         private bool IsScreensaverMode()
         {
-            // Определяет, запущено ли приложение как заставка
             string fileName = Path.GetFileNameWithoutExtension(Application.ExecutablePath).ToLower();
             return fileName.EndsWith(".scr");
         }
@@ -117,15 +116,13 @@ namespace Rivixal_Clock
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            // Проверка, достигла ли панель верхнего или нижнего края окна
             if (panel1.Top <= 0 || panel1.Bottom >= this.ClientSize.Height)
             {
-                direction *= -1; // Изменение направления движения
-                panel1.Top = Math.Max(0, Math.Min(panel1.Top, this.ClientSize.Height - panel1.Height)); // Корректировка позиции, чтобы не выходить за границы
+                direction *= -1;
+                panel1.Top = Math.Max(0, Math.Min(panel1.Top, this.ClientSize.Height - panel1.Height));
             }
 
-            // Случайная позиция по оси Y
-            if (random.Next(0, 100) < 90) // 10% шанс изменить позицию
+            if (random.Next(0, 100) < 90)
             {
                 panel1.Top = random.Next(0, this.ClientSize.Height - panel1.Height);
             }
@@ -171,20 +168,29 @@ namespace Rivixal_Clock
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            screensave = (Form1)this.Owner;
-            string alarmisnow = screensave.label6.Text;
-
-            bool isVisible;
-            if (bool.TryParse(alarmisnow, out isVisible))
+            if (this.Owner is Form1 screensave)
             {
-                pictureBox1.Visible = isVisible;
+                if (screensave.label6 != null)
+                {
+                    string alarmisnow = screensave.label6.Text;
+                    if (bool.TryParse(alarmisnow, out bool isVisible))
+                    {
+                        pictureBox1.Visible = isVisible;
+                    }
+                    else
+                    {
+                        pictureBox1.Visible = false;
+                    }
+                }
+                else
+                {
+                    pictureBox1.Visible = false;
+                }
             }
             else
             {
-                // Обработка случая, когда преобразование не удалось
-                pictureBox1.Visible = false; // или любое другое логическое значение по умолчанию
+                pictureBox1.Visible = false;
             }
         }
-
     }
 }

@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using RestSharp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
+using System.Security.Principal;
 
 
 namespace Rivixal_Clock
@@ -26,6 +28,20 @@ namespace Rivixal_Clock
             InitializeComponent();
             buttonInstallUpdate.Enabled = false;
 
+            switch (Properties.Settings.Default.language)
+            {
+                case "Русский":
+                    {
+                        Text = "Проверка обновлений";
+                        label2.Text = "Текущая версия: 2.0.2.0";
+                        label3.Text = "Обновления не найдены";
+                        buttonCheckUpdate.Text = "Проверить обновления";
+                        buttonInstallUpdate.Text = "Установить обновление";
+                        button1.Text = "Остановить";
+                        break;
+                    }
+            }
+
         }
 
         private void buttonCheckUpdate_Click(object sender, EventArgs e)
@@ -33,21 +49,25 @@ namespace Rivixal_Clock
             CheckForUpdate();
         }
 
-        private void CheckForUpdate()
+        private async void CheckForUpdate()
         {
+            progressBar1.Style = ProgressBarStyle.Marquee; // Устанавливаем стиль прогресс-бара на бесконечную анимацию
+            progressBar1.MarqueeAnimationSpeed = 30;
+
             try
             {
                 using (WebClient webClient = new WebClient())
                 {
                     ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072; // Используем Tls12
                     webClient.Headers.Add("User-Agent", "Anything");
-                    string response = webClient.DownloadString("https://api.github.com/repos/Rivixal/rivixalclock/releases");
+
+                    string response = await webClient.DownloadStringTaskAsync("https://api.github.com/repos/Rivixal/rivixalclock/releases"); // Асинхронная загрузка
 
                     JArray releases = JArray.Parse(response);
 
                     if (releases.Count > 0)
                     {
-                        progressBar1.Value = 0;
+                        progressBar1.Style = ProgressBarStyle.Blocks; // Возвращаем прогресс-бар в обычный стиль
                         JObject latestRelease = (JObject)releases[0];
 
                         string latestVersion = latestRelease["tag_name"]?.ToString();
@@ -68,7 +88,6 @@ namespace Rivixal_Clock
                                 }
                                 richTextBox1.Text = latestRelease["body"]?.ToString();
                                 buttonInstallUpdate.Enabled = true;
-                                progressBar1.Style = ProgressBarStyle.Blocks;
                                 return;
                             }
                             else
@@ -86,7 +105,6 @@ namespace Rivixal_Clock
                                     label3.Text = "Текущая версия: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
                                 }
                                 buttonInstallUpdate.Enabled = false;
-                                progressBar1.Style = ProgressBarStyle.Blocks;
                                 return;
                             }
                         }
@@ -105,7 +123,12 @@ namespace Rivixal_Clock
                 progressBar1.Style = ProgressBarStyle.Blocks;
                 MessageBox.Show(Properties.Settings.Default.language == "English" ? $"An error occurred: {ex.Message}" : $"Возникла ошибка: {ex.Message}", Properties.Settings.Default.language == "English" ? "Error" : "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                progressBar1.Style = ProgressBarStyle.Blocks; // Возвращаем прогресс-бар в обычный стиль после завершения операции
+            }
         }
+
 
 
 
@@ -126,54 +149,78 @@ namespace Rivixal_Clock
             try
             {
                 webClient = new WebClient();
-
                 ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
-
                 webClient.Headers.Add("User-Agent", "Anything");
 
                 string response = webClient.DownloadString("https://api.github.com/repos/Rivixal/rivixalclock/releases");
                 JArray releases = JArray.Parse(response);
+
                 if (releases.Count > 0)
                 {
                     string downloadUrl = releases[0]["assets"][0]["browser_download_url"].ToString();
-
                     string savePath = "update.exe";
+
                     webClient.DownloadProgressChanged += (s, e) =>
                     {
                         progressBar1.Value = e.ProgressPercentage;
-                        label5.Text = Properties.Settings.Default.language == "English" ? $"Update process {e.ProgressPercentage}% {e.BytesReceived}/{e.TotalBytesToReceive} Bytes" : $"Скачивание обновления: {e.ProgressPercentage}% {e.BytesReceived}/{e.TotalBytesToReceive} байтов";
+                        label5.Text = Properties.Settings.Default.language == "English"
+                            ? $"Update process {e.ProgressPercentage}% {e.BytesReceived}/{e.TotalBytesToReceive} Bytes"
+                            : $"Скачивание обновления: {e.ProgressPercentage}% {e.BytesReceived}/{e.TotalBytesToReceive} байтов";
                     };
 
                     webClient.DownloadFileCompleted += (s, e) =>
                     {
                         if (e.Error == null)
                         {
-                            System.Diagnostics.Process.Start(savePath);
+                            try
+                            {
+                                ProcessStartInfo processStartInfo = new ProcessStartInfo(savePath)
+                                {
+                                    UseShellExecute = true,
+                                    Verb = "runas"  // Запуск от имени администратора
+                                };
+                                Process.Start(processStartInfo);
+                                Application.Exit();  // Закрыть приложение после запуска обновления
+                            }
+                            catch (Win32Exception)
+                            {
+                                MessageBox.Show(Properties.Settings.Default.language == "English"
+                                    ? "The update requires administrative privileges to install."
+                                    : "Для установки обновления требуются права администратора.");
+                            }
                         }
                         else
                         {
-                            richTextBox1.Text = Properties.Settings.Default.language == "English" ? $"Error downloading the update: {e.Error.Message}" : $"Ошибка скачивания обновления: {e.Error.Message}";
+                            richTextBox1.Text = Properties.Settings.Default.language == "English"
+                                ? $"Error downloading the update: {e.Error.Message}"
+                                : $"Ошибка скачивания обновления: {e.Error.Message}";
                         }
                     };
 
-                    // Download the file from the specified URL
                     webClient.DownloadFileAsync(new Uri(downloadUrl), savePath);
                     MessageBox.Show(Properties.Settings.Default.language == "English" ? "Update download started." : "Скачивание обновления началось.");
                 }
                 else
                 {
-                    richTextBox1.Text = Properties.Settings.Default.language == "English" ? "Failed to retrieve data about the latest release." : "Не удалось получить данные о последнем релизе.";
+                    richTextBox1.Text = Properties.Settings.Default.language == "English"
+                        ? "Failed to retrieve data about the latest release."
+                        : "Не удалось получить данные о последнем релизе.";
                 }
             }
             catch (WebException)
             {
-                richTextBox1.Text = Properties.Settings.Default.language == "English" ? "Error downloading the update. Check your internet connection and try again." : "Произошла ошибка при попытке скачивания обновления. Проверьте ваше Интернет подключение и повторите попытку еще раз.";
+                richTextBox1.Text = Properties.Settings.Default.language == "English"
+                    ? "Error downloading the update. Check your internet connection and try again."
+                    : "Произошла ошибка при попытке скачивания обновления. Проверьте ваше Интернет подключение и повторите попытку еще раз.";
             }
             catch (Exception ex)
             {
-                richTextBox1.Text = Properties.Settings.Default.language == "English" ? $"An error occured: {ex.Message}" : $"Возникла ошибка: {ex.Message}";
+                richTextBox1.Text = Properties.Settings.Default.language == "English"
+                    ? $"An error occured: {ex.Message}"
+                    : $"Возникла ошибка: {ex.Message}";
             }
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -194,20 +241,58 @@ namespace Rivixal_Clock
 
         private void updater_Load(object sender, EventArgs e)
         {
-            switch (Properties.Settings.Default.language)
+            // Проверка прав администратора
+            if (!IsUserAdministrator())
             {
-                case "Русский":
-                    {
-                        Text = "Проверка обновлений";
-                        label2.Text = "Текущая версия: 2.0.0.0";
-                        label3.Text = "Обновления не найдены";
-                        buttonCheckUpdate.Text = "Проверить обновления";
-                        buttonInstallUpdate.Text = "Установить обновление";
-                        button1.Text = "Остановить";
-                        break;
-                    }
+                // Если не запущено с правами администратора — запросить перезапуск с ними
+                DialogResult result = MessageBox.Show(
+                    Properties.Settings.Default.language == "English" ? "This action requires administrator rights. Do you want to restart the program as an administrator?" : "Это действие требует прав администратора. Хотите перезапустить программу с правами администратора?",
+                    Properties.Settings.Default.language == "English" ? "Administrator Required" : "Требуется администратор",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    RestartAsAdmin();
+                }
+                else
+                {
+                    this.Close(); // Закрыть форму, если права не были получены
+                }
             }
         }
 
+        private bool IsUserAdministrator()
+        {
+            WindowsIdentity identity = WindowsIdentity.GetCurrent();
+            WindowsPrincipal principal = new WindowsPrincipal(identity);
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
+        }
+
+        private void RestartAsAdmin()
+        {
+            try
+            {
+                ProcessStartInfo processInfo = new ProcessStartInfo();
+                processInfo.UseShellExecute = true;
+                processInfo.WorkingDirectory = Environment.CurrentDirectory;
+                processInfo.FileName = Application.ExecutablePath;
+                processInfo.Verb = "runas"; // Запрос прав администратора
+
+                try
+                {
+                    Process.Start(processInfo);
+                    Application.Exit(); // Завершить текущий процесс
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(Properties.Settings.Default.language == "English" ? $"Failed to restart as administrator: {ex.Message}" : $"Не удалось перезапустить с правами администратора: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Properties.Settings.Default.language == "English" ? $"An error occurred: {ex.Message}" : $"Возникла ошибка: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

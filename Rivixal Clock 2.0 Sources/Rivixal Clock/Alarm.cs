@@ -49,7 +49,7 @@ namespace Rivixal_Clock
                 panel2.BackgroundImage = Properties.Resources.homecomingremix;
                 pictureBox2.Image = Properties.Resources.homecomingremix;
             }
-            if (soundFile == "Radial")
+            else if (soundFile == "Radial")
             {
                 panel2.BackgroundImage = Properties.Resources.ost;
                 pictureBox2.Image = Properties.Resources.ost;
